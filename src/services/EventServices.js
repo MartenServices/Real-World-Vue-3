@@ -1,20 +1,24 @@
-import axios from 'axios';
+import axios from "axios";
 
 const apiClient = axios.create({
-    baseURL: 'https://my-json-server.typicode.com/MartenServices/Real-World-Vue-3',
-    withCredentials: false,
-    headers: {
-        Acccept: 'application/json',
-        'Content-type': 'application/json'
-    }
-})
+  baseURL:
+   "http://localhost:3000",
+  withCredentials: false,
+  headers: {
+    Acccept: "application/json",
+    "Content-type": "application/json",
+  },
+});
 
 export default {
-    getEvents(){
-        return apiClient.get('/events')
-    },
-    // Added new call for single event by ID
-    getEvent(id) {
-        return apiClient.get('/events/' + id)
-    }
-}
+  getEvents(perPage, page) {
+    return apiClient.get("/events?_limit=" + perPage + "&_page=" + page);
+  },
+  // Added new call for single event by ID
+  getEvent(id) {
+    return apiClient.get("/events/" + id);
+  },
+  postEvent(event){// new post request
+    return apiClient.post('/events', event)
+  }
+};

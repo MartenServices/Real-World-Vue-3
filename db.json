@@ -1,67 +1,107 @@
 {
-    "events": [
-      {
-        "id": 123,
-        "category": "animal welfare",
-        "title": "Cat Adoption Day",
-        "description": "Find your new feline friend at this event.",
-        "location": "Meow Town",
-        "date": "January 28, 2022",
-        "time": "12:00",
-        "organizer": "Kat Laydee"
-      },
-      {
-        "id": 456,
-        "category": "food",
-        "title": "Community Gardening",
-        "description": "Join us as we tend to the community edible plants.",
-        "location": "Flora City",
-        "date": "March 14, 2022",
-        "time": "10:00",
-        "organizer": "Fern Pollin"
-      },
-      {
-        "id": 789,
-        "category": "sustainability",
-        "title": "Beach Cleanup",
-        "description": "Help pick up trash along the shore.",
-        "location": "Playa Del Carmen",
-        "date": "July 22, 2022",
-        "time": "11:00",
-        "organizer": "Carey Wales"
-      },
-      {
-        "id": 1001,
-        "category": "animal welfare",
-        "title": "Dog Adoption Day",
-        "description": "Find your new canine friend at this event.",
-        "location": "Woof Town",
-        "date": "August 28, 2022",
-        "time": "12:00",
-        "petsAllowed": true,
-        "organizer": "Dawg Dahd"
-      },
-      {
-        "id": 1002,
-        "category": "food",
-        "title": "Canned Food Drive",
-        "description": "Bring your canned food to donate to those in need.",
-        "location": "Tin City",
-        "date": "September 14, 2022",
-        "time": "3:00",
-        "petsAllowed": true,
-        "organizer": "Kahn Opiner"
-      },
-      {
-        "id": 1003,
-        "category": "sustainability",
-        "title": "Highway Cleanup",
-        "description": "Help pick up trash along the highway.",
-        "location": "Highway 50",
-        "date": "July 22, 2022",
-        "time": "11:00",
-        "petsAllowed": false,
-        "organizer": "Brody Kill"
-      }
-    ]
-  }
+  "events": [
+    {
+      "id": 1234,
+      "category": "animal welfare",
+      "title": "Cat Adoption Day",
+      "description": "Find your new feline friend at this event.",
+      "location": "Meow Town",
+      "date": "January 28, 2022",
+      "time": "12:00",
+      "organizer": "Kat Laydee"
+    },
+    {
+      "id": 456,
+      "category": "food",
+      "title": "Community Gardening",
+      "description": "Join us as we tend to the community edible plants.",
+      "location": "Flora City",
+      "date": "March 14, 2022",
+      "time": "10:00",
+      "organizer": "Fern Pollin"
+    },
+    {
+      "id": 789,
+      "category": "sustainability",
+      "title": "Beach Cleanup",
+      "description": "Help pick up trash along the shore.",
+      "location": "Playa Del Carmen",
+      "date": "July 22, 2022",
+      "time": "11:00",
+      "organizer": "Carey Wales"
+    },
+    {
+      "id": 1001,
+      "category": "animal welfare",
+      "title": "Dog Adoption Day",
+      "description": "Find your new canine friend at this event.",
+      "location": "Woof Town",
+      "date": "August 28, 2022",
+      "time": "12:00",
+      "petsAllowed": true,
+      "organizer": "Dawg Dahd"
+    },
+    {
+      "id": 1002,
+      "category": "food",
+      "title": "Canned Food Drive",
+      "description": "Bring your canned food to donate to those in need.",
+      "location": "Tin City",
+      "date": "September 14, 2022",
+      "time": "3:00",
+      "petsAllowed": true,
+      "organizer": "Kahn Opiner"
+    },
+    {
+      "id": 1003,
+      "category": "sustainability",
+      "title": "Highway Cleanup",
+      "description": "Help pick up trash along the highway.",
+      "location": "Highway 50",
+      "date": "July 22, 2022",
+      "time": "11:00",
+      "petsAllowed": false,
+      "organizer": "Brody Kill"
+    },
+    {
+      "id": "4f4e3c9b-9e44-4d37-86c5-cfcd787025dd",
+      "category": "nature",
+      "title": "Wood Cleanup",
+      "description": "help the woods keep clean",
+      "location": "haagse bos",
+      "date": "November 22, 2022",
+      "time": "1pm",
+      "organizer": "Ryan Marten"
+    },
+    {
+      "id": "330bd04f-ca57-4060-af0f-a6688f56fcbf",
+      "category": "food",
+      "title": "Sustainable Carribean Cooking",
+      "description": "Learn to know what you eat",
+      "location": "The Hague",
+      "date": "December 26, 2023",
+      "time": "5PM",
+      "organizer": "Ryan Marten"
+    },
+    {
+      "id": "1133c678-d6d4-4d22-8b6c-9c64707da347",
+      "category": "nature",
+      "title": "",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "organizer": "Ryan Marten"
+    },
+    {
+      "id": "822c6879-10a1-4b41-9d30-a12581f7ad84",
+      "category": "sustainability",
+      "title": "Did werk wel",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "organizer": "Ryan Marten"
+    }
+  ]
+}
