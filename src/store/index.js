@@ -33,23 +33,34 @@ export default createStore({
                     console.log(error)
                 })
         },
-        // fetchEvents({ commit }) {
-        //     EventServices.getEvents()
+        // fetchEvents({ commit },maxPages, page, next ) {
+        //     EventServices.getEvents(maxPages, page)
         //         .then((response) => {
-        //             commit('SET_EVENTS', response.data)
-        //             commit('SET_TOTAL_EVENTS', response.headers["x-total-count"])
+        //             next(() =>{
+        //                 commit('SET_EVENTS', response.data)
+        //                 commit('SET_TOTAL_EVENTS', response.headers["x-total-count"])
+        //             })
         //         })
         //         .catch(() => {
         //            return this.$router.push({ name: 'NetworkError' })
         //         })
         // },
-        fectchEvent({ commit }, id){
+        fetchEvent({ commit }, id){
             EventServices.getEvent(id)
             .then((response) => {
                 commit('SET_EVENT', response.data)
             })
-            .catch(() => {
-                return this.$router.push({ name: 'NetworkError' })
+            .catch((error) => {
+                if (error.response && error.response.status == 404) {
+                return {
+                    name: "404Resource",
+                    params: { resource: "event" },
+                }
+                } else {
+                return {
+                    name: "NetworkError",
+                }
+                }
             })
         },
     },

@@ -12,7 +12,7 @@ export default {
       // call to API
       // If registered then  redrirect to event details
       this.$store.state.flashMessage =
-        "You are succesfully registered for " + this.event.title;
+        "You are succesfully registered for " + this.$store.state.event.title;
 
       setTimeout(() => {
         this.$store.state.flashMessage = "";
@@ -20,8 +20,8 @@ export default {
 
       this.$router.push({
         name: "EventDetails",
-        params: { id: this.event.id },
-      });
+        params: { id: this.$store.state.event.id },
+      })
     },
   },
 };

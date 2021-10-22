@@ -84,23 +84,43 @@
       "organizer": "Ryan Marten"
     },
     {
-      "id": "1133c678-d6d4-4d22-8b6c-9c64707da347",
-      "category": "nature",
-      "title": "",
-      "description": "",
-      "location": "",
-      "date": "",
-      "time": "",
+      "id": "3a9b653c-ffab-400a-9207-75006b7ac64d",
+      "category": "animal welfare",
+      "title": "Walking The Dogs",
+      "description": "Help your shelter walk the dogs at the beach",
+      "location": "Scheveningen",
+      "date": "2 January",
+      "time": "10AM",
       "organizer": "Ryan Marten"
     },
     {
-      "id": "822c6879-10a1-4b41-9d30-a12581f7ad84",
-      "category": "sustainability",
-      "title": "Did werk wel",
-      "description": "",
-      "location": "",
-      "date": "",
-      "time": "",
+      "id": "b2516a45-a855-4d45-bf33-01e9513f7736",
+      "category": "education",
+      "title": "Extra Homework",
+      "description": "Help children develop their skills",
+      "location": "Online",
+      "date": "13 April",
+      "time": "5PM",
+      "organizer": "Ryan Marten"
+    },
+    {
+      "id": "d16a0bc7-51be-48f9-9b0c-ee856319f2f2",
+      "category": "animal welfare",
+      "title": "Cow Milking",
+      "description": "Help your local farmer out!",
+      "location": "McDonalds Farm",
+      "date": "19 July, 2023",
+      "time": "1PM",
+      "organizer": "Ryan Marten"
+    },
+    {
+      "id": "545e2376-1d7e-4745-a6a9-e0591e657c2f",
+      "category": "nature",
+      "title": "Tree Planting",
+      "description": "Help us plants trees",
+      "location": "SoutWest Hamptom",
+      "date": "4 October, 2034",
+      "time": "2PM",
       "organizer": "Ryan Marten"
     }
   ]

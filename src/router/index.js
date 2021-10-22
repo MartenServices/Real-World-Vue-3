@@ -8,39 +8,23 @@ import EventCreate from "../views/event/EventCreate.vue"
 import NotFound from "../views/NotFound";
 import NetworkError from "../views/NetworkError";
 import NProgress from 'nprogress';
-import EventServices from "@/services/EventServices.js";
+// import EventServices from "@/services/EventServices.js";
+import store from '@/store'
 
 const routes = [
   {
     path: "/",
     name: "EventList",
     component: EventList,
-    props: (route) => ({ page: parseInt(route.query.page) || 1 })
+    props: (route) => ({ page: parseInt(route.query.page) || 1 }),
   },
   {
     path: "/events/:id",
     name: "EventLayout",
     props: true,
     component: EventLayout,
-    beforeEnter: (to, next) => {
-      EventServices.getEvent(to.params.id)
-        .then(response => {
-          next((comp)=>{
-            comp.$store.state.event = response.data
-          })
-        })
-        .catch((error) => {
-          if (error.response && error.response.status == 404) {
-            return {
-              name: "404Resource",
-              params: { resource: "event" },
-            }
-          } else {
-            return {
-              name: "NetworkError",
-            }
-          }
-        })
+    beforeEnter: (to) => {
+      store.dispatch( 'fetchEvent', to.params.id)
     },
     children: [
       {
@@ -127,10 +111,10 @@ router.beforeEach((to,from) => {
 
   const notAuthorized = true
   if(to.meta.requireAuth && notAuthorized){
-    this.$store.state.flashMessage = 'Sorry you are not authorized to view this page'
+    store.state.flashMessage = 'Sorry you are not authorized to view this page'
 
     setTimeout(() => {
-      this.$store.state.flashMessage = ''
+      store.state.flashMessage = ''
     }, 3000)
     if(from.href){
       return false

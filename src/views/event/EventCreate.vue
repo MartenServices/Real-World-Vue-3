@@ -94,16 +94,12 @@ export default {
           organizer: this.$store.state.user
         }
         this.$store.dispatch('createEvent', event)
-        // this.event.id = uuidv4()
-//         this.event.organizer = GStore.state.user
-//         EventServices.postEvent(this.event)
-//           .then(() => {
-           
-//           })
-//           .catch( error =>{
-//             console.log(error)
-//           })
-      // console.log("Event:", this.event)
+          .then(() => {
+            this.$router.push({
+          name: "EventDetails",
+          params: { id: this.event.id },
+        })
+        })
     }
   }
 }

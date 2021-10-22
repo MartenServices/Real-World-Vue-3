@@ -6,10 +6,12 @@
       <router-link :to="{ name: 'EventRegister' }">Register</router-link>
       <router-link :to="{ name: 'EventEdit' }">Edit</router-link>
     </div>
-    <router-view :event="this.$store.state.event"></router-view>
+    <router-view :event="this.event"></router-view>
   </div>
 </template>
 
 <script>
-
+export default {
+  props: ['event'],
+}
 </script>
